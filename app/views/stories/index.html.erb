@@ -1,0 +1,21 @@
+<h1>This is the stories page</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Actions</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @stories.each do |story| %>
+    <tr>
+      <td><%= story.title %></td>
+      <td><%= story.description %></td>
+      <td>Placeholder</td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
